@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:50px;
+        gap:3px;
+        text-align: center;
+    }
+    .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+</style>
+<body>
+    <form   id="form" onsubmit="return validateForm()">
+        <p>
+            
+            <input type="number" id="name"  
+                placeholder="Enter your full number" />
+            <span id="name-error" class="error-message"></span>
+        </p>
+        <p>
+            
+            <input type="date" id="date"/>
+            <span id="date-error" class="error-message"></span>
+        </p>
+
+        <p>
+            
+            <input type="text" id="address" 
+                placeholder="Enter your address" />
+            <span id="address-error" class="error-message"></span>
+        </p>
+        <p>
+           
+            <input type="text" id="email"  
+                placeholder="Enter your email" />
+            <span id="email-error" class="error-message"></span>
+        </p>
+        <p>
+            
+            <input type="password" id="password"  />
+            <span id="password-error" class="error-message"></span>
+        </p>
+        
+        <p>
+            
+            <textarea id="comment"  ></textarea>
+            <span id="comment-error" class="error-message"></span>
+        </p>
+        
+        <p>
+            <input type="submit" value="Send" name="Submit" />
+           
+        </p>
+    </form>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
+
